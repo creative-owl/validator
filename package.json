@@ -1,0 +1,31 @@
+{
+  "name": "@creativeowl/validator",
+  "version": "0.0.1",
+  "description": "Validation package that provides easy and fluid validation",
+  "main": "./dist/index.js",
+  "scripts": {
+    "test": "nyc mocha './tests/**/*.spec.js' -b"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/creative-owl/validator.git"
+  },
+  "author": "@jasonsaayman",
+  "license": "MIT",
+  "homepage": "https://bitbucket.org/netwarriors/validator#readme",
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "chalk": "^2.4.2",
+    "codacy-coverage": "^3.4.0",
+    "husky": "^3.0.0",
+    "mocha": "^6.1.4",
+    "mocha-lcov-reporter": "^1.3.0",
+    "nyc": "^14.1.1"
+  },
+  "husky": {
+    "hooks": {
+      "pre-push": "npm test"
+    }
+  },
+  "dependencies": {}
+}
