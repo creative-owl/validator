@@ -1,6 +1,6 @@
 {
   "name": "@creativeowl/validator",
-  "version": "0.0.1",
+  "version": "1.0.1-1",
   "description": "Validation package that provides easy and fluid validation",
   "main": "./dist/index.js",
   "scripts": {
