@@ -2,6 +2,7 @@ const language = require('./Language');
 
 class Response {
   /**
+   * Formulates the final response.
    *
    * @param {Object<string, any>} data,
    * @param {Object<string, any>} assertions
@@ -15,8 +16,8 @@ class Response {
 
     for (let i in results) {
       if (results[i].includes(false)) {
-        returnable[this.getKeyByValue(data, i)] = this.message(
-          this.getKeyByValue(data, i), assertionArray[i], results[i]
+        returnable[this.getKeyByValue(assertions, i)] = this.message(
+          this.getKeyByValue(assertions, i), assertionArray[i], results[i]
         );
       }
     }
