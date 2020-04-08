@@ -8,7 +8,7 @@ class In extends RuleInterface {
    * Validates that the data given is not in a array.
    *
    * @param {Object<string, string>} data
-   * @param {string} field
+   * @param {String} field
    * @param {Array<any>} searchArray
    *
    * @returns {Object<string, string>}
