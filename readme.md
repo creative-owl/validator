@@ -80,14 +80,24 @@ The field under validation must be a valid South African identity number. The fi
 The existence validation rules are a collection of rules used for different existence scenarios and are normally used in conjunction with other rules.
 
 ### filled
+The field under validation must not be empty when it is present.
 
 ### optional
+The filed under validation is optional and may be left out.
 
 ### required
+The field under validation must be present in the input data and not empty. A field is considered "empty" if one of the following conditions are true:
 
-### required_if
+- The value is null.
+- The value is an empty string.
+- The value is an empty array or empty Countable object.
+- The value is an uploaded file with no path.
 
-### required_with
+### required_if: _anotherfield,value,..._
+The field under validation must be present and not empty if the anotherfield field is equal to any value.
+
+### required_with: _foo,bar,..._
+The field under validation must be present and not empty only if any of the other specified fields are present.
 
 ## Complex
 
