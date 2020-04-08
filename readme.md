@@ -103,17 +103,33 @@ The complex validation rules are a collection of rules used for complex scenario
 ### above
 
 
-### confirmed
+### confirmed:_field_confirmation_
+The field under validation must have a matching field of field_confirmation.
 
+### date_after:_date_
+The field under validation must be after the date given.
 
-### date_after
+### date_before:_date_
+The field under validation must be before the date given.
 
+### date_format:_format_
+The field under validation must be of the format given. For example a date given of ```13/12/2010``` would pass validation of ```DD/MM/YYYY``` and fail validation of ```DD-MM-YYYY```.
 
-### date_before
-
-
-### date_format
-
+The formats that may be used to validate against are as follows:
+```
+'YYYY-MM-DD', 'YYYY-MM-D', 'YYYY-M-DD', 'YYYY-M-D',
+'YYYY-DD-MM', 'YYYY-D-MM', 'YYYY-DD-M', 'YYYY-D-M',
+'DD-MM-YYYY', 'D-MM-YYYY', 'DD-M-YYYY', 'D-M-YYYY',
+'MM-DD-YYYY', 'MM-D-YYYY', 'M-DD-YYYY', 'M-D-YYYY',
+'YYYY.MM.DD', 'YYYY.MM.D', 'YYYY.M.DD', 'YYYY.M.D',
+'YYYY.DD.MM', 'YYYY.D.MM', 'YYYY.DD.M', 'YYYY.D.M',
+'DD.MM.YYYY', 'D.MM.YYYY', 'DD.M.YYYY', 'D.M.YYYY',
+'MM.DD.YYYY', 'MM.D.YYYY', 'M.DD.YYYY', 'M.D.YYYY',
+'YYYY/MM/DD', 'YYYY/MM/D', 'YYYY/M/DD', 'YYYY/M/D',
+'YYYY/DD/MM', 'YYYY/D/MM', 'YYYY/DD/M', 'YYYY/D/M',
+'DD/MM/YYYY', 'D/MM/YYYY', 'DD/M/YYYY', 'D/M/YYYY',
+'MM/DD/YYYY', 'MM/D/YYYY', 'M/DD/YYYY', 'M/D/YYYY'
+```
 
 ### equals
 
