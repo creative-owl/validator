@@ -46,16 +46,34 @@ The simple validation rules are a collection of rules used for type checking and
 The field under validation must be entirely alphabetic characters.
 
 ### alpha_numeric
+The field under validation must be entirely alpha-numeric characters.
+
 ### array
+The field under validation must be a JavaScript array.
+
 ### bool
+The field under validation must be able to be cast as a boolean. Accepted input are ```true```, ```false```.
+
 ### date
+The field under validation must be a valid, non-relative date according to the JavaScript.
+
 ### email
+The field under validation must be formatted as an e-mail address. Please note that this is a RegEx check and does not conform to RFC based validation. This will also not validate the existance of the email address.
+
 ### integer
+The field under validation must be an integer. This is a strict integer type test.
+
 ### numeric
+The field under validation must be numeric. This checks against JavaScripts' numeric type and therefore will accept any of the following ```10```, ```1.99```, ```"111"``` or ```"1.22"```
+
 ### object
+The field under validation must be a JavaScript object.
+
 ### string
+The field under validation must be a string.
+
 ### za_id_number
-### za_phone_number
+The field under validation must be a valid South African identity number. The field is validated agains the Luhn algorithm.
 
 ## Versioning
 
