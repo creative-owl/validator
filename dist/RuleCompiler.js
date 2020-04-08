@@ -6,9 +6,9 @@ class RuleCompiler {
    * Asserts a rule that has only a single assertion.
    *
    * @param {Object<string, any>} data
-   * @param {string} field
+   * @param {String} field
    * @param {Array<string>} rules
-   * @param {number} i
+   * @param {Number} i
    *
    * @returns {Array<boolean>}
    */
@@ -26,9 +26,9 @@ class RuleCompiler {
    * Asserts a rule that has two assertion.
    *
    * @param {Object<string, any>} data
-   * @param {string} field
+   * @param {String} field
    * @param {Array<string>} rules
-   * @param {number} i
+   * @param {Number} i
    *
    * @returns {Array<boolean>}
    */
@@ -49,9 +49,9 @@ class RuleCompiler {
    * Asserts a rule that has multiple assertion.
    *
    * @param {Object<string, any>} data
-   * @param {string} field
+   * @param {String} field
    * @param {Array<string>} rules
-   * @param {number} i
+   * @param {Number} i
    *
    * @returns {Array<boolean>}
    */

@@ -38,11 +38,11 @@ class Response {
   /**
    * Formulated the message that will be sent.
    *
-   * @param {string} field
-   * @param {string} assertions
+   * @param {String} field
+   * @param {String} assertions
    * @param {Array<boolean>} results
    *
-   * @returns {string}
+   * @returns {String}
    */
   static message(field, assertions, results) {
     let pointer = results.indexOf(false);
@@ -78,9 +78,9 @@ class Response {
    * Get object keys by their values.
    *
    * @param {Object<string, any>} object
-   * @param {number} index
+   * @param {Number} index
    *
-   * @returns {string}
+   * @returns {String}
    */
   static getKeyByValue(object, index) {
     return Object.keys(object)[index];
