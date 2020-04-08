@@ -5,7 +5,7 @@ class Required extends RuleInterface {
    * Validates that the given field is present.
    *
    * @param {Object<string, string>} data
-   * @param {string} field
+   * @param {String} field
    *
    * @returns {Object<string, string>}
    */

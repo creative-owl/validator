@@ -6,8 +6,8 @@ class RequiredWith extends RuleInterface {
    * field is in the request.
    *
    * @param {Object<string, string>} data
-   * @param {string} field
-   * @param {string} check
+   * @param {String} field
+   * @param {String} check
    *
    * @returns {Object<string, string>}
    */

@@ -6,7 +6,7 @@ class Filled extends RuleInterface {
    * set. The field may be null or empty.
    *
    * @param {Object<string, string>} data
-   * @param {string} field
+   * @param {String} field
    *
    * @returns {Object<string, string>}
    */
