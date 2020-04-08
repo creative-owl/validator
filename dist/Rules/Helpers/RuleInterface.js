@@ -4,7 +4,7 @@ class RuleInterface {
    *
    * @throws {Error}
    *
-   * @returns {void}
+   * @returns {Self}
    */
   constructor() {
     if (!this.validate) {
