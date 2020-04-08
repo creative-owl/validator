@@ -5,9 +5,9 @@ class Value {
    * Gets a field from the given data.
    *
    * @param {Object<string, string>} data
-   * @param {string} field
+   * @param {String} field
    *
-   * @returns {any}
+   * @returns {Any}
    */
   static get(data, field) {
     let value = data['' + field + ''];

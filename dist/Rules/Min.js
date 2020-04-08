@@ -7,8 +7,8 @@ class Min extends RuleInterface {
    * Validates the data length is longer than the given minimum.
    *
    * @param {Object<string, string>} data
-   * @param {string} field
-   * @param {number} min
+   * @param {String} field
+   * @param {Number} min
    *
    * @returns {Object<string, string>}
    */

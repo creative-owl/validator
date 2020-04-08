@@ -7,7 +7,7 @@ class Validation {
    * @param {Object<string, any>} data
    * @param {Object<string, string>} rules
    *
-   * @returns {void}
+   * @returns {Self}
    */
   constructor(data, rules) {
     let validations = new Validator();

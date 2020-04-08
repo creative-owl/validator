@@ -8,8 +8,8 @@ class DateFormat extends RuleInterface {
    * Validates that the date given is in the format supplied.
    *
    * @param {Object<string, string>} data
-   * @param {string} field
-   * @param {string} format
+   * @param {String} field
+   * @param {String} format
    *
    * @returns {Object<string, string>}
    */

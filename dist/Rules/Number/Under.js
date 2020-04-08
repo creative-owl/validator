@@ -9,8 +9,8 @@ class Under extends RuleInterface {
    * Validates that the data given is under a specified value.
    *
    * @param {Object<string, string>} data
-   * @param {string} field
-   * @param {number} ceiling
+   * @param {String} field
+   * @param {Number} ceiling
    *
    * @returns {Object<string, string>}
    */

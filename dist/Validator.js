@@ -26,8 +26,8 @@ class Validator {
    * Runs the rules agains the data.
    *
    * @param {Object<string, any>} data
-   * @param {string} field
-   * @param {string} assertion
+   * @param {String} field
+   * @param {String} assertion
    *
    * @returns {Object<string, string>}
    */

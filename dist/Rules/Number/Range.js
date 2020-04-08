@@ -8,9 +8,9 @@ class Range extends RuleInterface {
    * Validates that the data given is in a range.
    *
    * @param {Object<string, string>} data
-   * @param {string} field
-   * @param {number} floor
-   * @param {number} ceiling
+   * @param {String} field
+   * @param {Number} floor
+   * @param {Number} ceiling
    *
    * @returns {Object<string, string>}
    */

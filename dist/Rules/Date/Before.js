@@ -6,8 +6,8 @@ class Before extends RuleInterface {
    * Validates that the given data id after a specific point in time.
    *
    * @param {Object<string, string>} data
-   * @param {string} field
-   * @param {string} pointInTime
+   * @param {String} field
+   * @param {String} pointInTime
    *
    * @returns {Object<string, string>}
    */

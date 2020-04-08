@@ -6,7 +6,7 @@ class Optional extends RuleInterface {
    * set. The field may be omitted, null, empty or undefined.
    *
    * @param {Object<string, string>} data
-   * @param {string} field
+   * @param {String} field
    *
    * @returns {Object<string, string>}
    */

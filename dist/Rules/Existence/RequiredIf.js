@@ -7,9 +7,9 @@ class RequiredIf extends RuleInterface {
    * field is in the request.
    *
    * @param {Object<string, string>} data
-   * @param {string} field
-   * @param {string} check
-   * @param {any} equals
+   * @param {String} field
+   * @param {String} check
+   * @param {Any} equals
    *
    * @returns {Object<string, string>}
    */

@@ -2,7 +2,7 @@ class ParameterNotValidException extends Error {
   /**
    * A custom error for parameters not meeting requirements.
    *
-   * @param {string} type
+   * @param {String} type
    *
    * @returns {Error}
    */

@@ -8,8 +8,8 @@ class Above extends RuleInterface {
    * Validates that the data given is above a specified value.
    *
    * @param {Object<string, string>} data
-   * @param {string} field
-   * @param {number} floor
+   * @param {String} field
+   * @param {Number} floor
    *
    * @returns {Object<string, string>}
    */

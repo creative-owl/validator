@@ -6,8 +6,8 @@ class Confirmed extends RuleInterface {
    * Validates that the data given is confirmed by another field.
    *
    * @param {Object<string, string>} data
-   * @param {string} field
-   * @param {string} checkField
+   * @param {String} field
+   * @param {String} checkField
    *
    * @returns {Object<string, string>}
    */

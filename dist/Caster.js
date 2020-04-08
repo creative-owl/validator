@@ -2,9 +2,9 @@ class Caster {
   /**
    * Casts a single value to an approximated type.
    *
-   * @param {string} value
+   * @param {String} value
    *
-   * @returns {any}
+   * @returns {Any}
    */
   static single(value) {
     if (/^-?\d+\.?\d*$/.test(value)) {

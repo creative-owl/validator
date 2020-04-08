@@ -8,8 +8,8 @@ class Equals extends RuleInterface {
    * Validates that the data given is equal to a check
    *
    * @param {Object<string, string>} data
-   * @param {string} field
-   * @param {any} check
+   * @param {String} field
+   * @param {Any} check
    *
    * @returns {Object<string, string>}
    */

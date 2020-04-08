@@ -7,8 +7,8 @@ class Max extends RuleInterface {
    * Validates the data length is no longer than the given maximum.
    *
    * @param {Object<string, string>} data
-   * @param {string} field
-   * @param {number} max
+   * @param {String} field
+   * @param {Number} max
    *
    * @returns {Object<string, string>}
    */
