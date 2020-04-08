@@ -6,7 +6,7 @@ class Email extends RuleInterface {
    * Validates that the data given is of type: email address
    *
    * @param {Object<string, string>} data
-   * @param {string} field
+   * @param {String} field
    *
    * @returns {Object<string, string>}
    */

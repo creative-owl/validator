@@ -6,7 +6,7 @@ class ZARIdentityNumber extends RuleInterface {
    * Validates that the data given is of type: SA ID Number
    *
    * @param {Object<string, string>} data
-   * @param {string} field
+   * @param {String} field
    *
    * @returns {Object<string, string>}
    */

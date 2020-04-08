@@ -8,7 +8,7 @@ class Alpha extends RuleInterface {
    * only.
    *
    * @param {Object<string, string>} data
-   * @param {string} field
+   * @param {String} field
    *
    * @returns {Object<string, string>}
    */
