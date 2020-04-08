@@ -7,8 +7,8 @@ class Regex extends RuleInterface {
    * Validates given data with a given regex string.
    *
    * @param {Object<string, string>} data
-   * @param {string} field
-   * @param {string} expression
+   * @param {String} field
+   * @param {String} expression
    *
    * @returns {Object<string, string>}
    */
