@@ -20,11 +20,22 @@ const Validator = require('@creativeowl/validator');
 
 ## Documentation
 
-### Simple
+## Simple
 
 The simple validation is a collection of rules used for type checking and very simple validation scenarios.
 
-
+### Alpha
+### Array
+### Bool
+### Object
+### Alpha numeric
+### Email
+### String
+### ZA ID Number
+### ZA phone number
+### Numeric
+### Integer
+### Date
 
 ## Versioning
 
