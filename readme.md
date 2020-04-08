@@ -100,47 +100,63 @@ The field under validation must be present and not empty only if the other speci
 ## Complex
 The complex validation rules are a collection of rules used for complex scenarios where validation requires more robust tooling.
 
-### above
+### above:_value_
+The field under validation must have a value that is numericaly higher than the number given.
 
+### confirmed:_field_confirmation_
+The field under validation must have a matching field of field_confirmation.
 
-### confirmed
+### date_after:_value_
+The field under validation must be after the date given.
 
+### date_before:_value_
+The field under validation must be before the date given.
 
-### date_after
+### date_format:_format_
+The field under validation must be of the format given. For example a date given of ```13/12/2010``` would pass validation of ```DD/MM/YYYY``` and fail validation of ```DD-MM-YYYY```.
 
+The formats that may be used to validate against are as follows:
+```
+'YYYY-MM-DD', 'YYYY-MM-D', 'YYYY-M-DD', 'YYYY-M-D',
+'YYYY-DD-MM', 'YYYY-D-MM', 'YYYY-DD-M', 'YYYY-D-M',
+'DD-MM-YYYY', 'D-MM-YYYY', 'DD-M-YYYY', 'D-M-YYYY',
+'MM-DD-YYYY', 'MM-D-YYYY', 'M-DD-YYYY', 'M-D-YYYY',
+'YYYY.MM.DD', 'YYYY.MM.D', 'YYYY.M.DD', 'YYYY.M.D',
+'YYYY.DD.MM', 'YYYY.D.MM', 'YYYY.DD.M', 'YYYY.D.M',
+'DD.MM.YYYY', 'D.MM.YYYY', 'DD.M.YYYY', 'D.M.YYYY',
+'MM.DD.YYYY', 'MM.D.YYYY', 'M.DD.YYYY', 'M.D.YYYY',
+'YYYY/MM/DD', 'YYYY/MM/D', 'YYYY/M/DD', 'YYYY/M/D',
+'YYYY/DD/MM', 'YYYY/D/MM', 'YYYY/DD/M', 'YYYY/D/M',
+'DD/MM/YYYY', 'D/MM/YYYY', 'DD/M/YYYY', 'D/M/YYYY',
+'MM/DD/YYYY', 'MM/D/YYYY', 'M/DD/YYYY', 'M/D/YYYY'
+```
 
-### date_before
+### equals:_value_
+The field under validation must be equal the given value this funciton does not type check.
 
+### in:_[value1, value2...]_
+The field under validation must be included in the given array of values.
 
-### date_format
+### max:_value_
+The field under validation must not be above the maximum length of the given value.
 
+### min:_value_
+The field under validation must have a minimum length of the given value.
 
-### equals
+### not_equal:_value_
+The field under validation must not equal the given value this funciton does not type check.
 
+### not_in:_[value1, value2...]_
+The field under validation must not be included in the given array of values.
 
-### in
+### number_in_range:_topValue,bottomValue_
+The field under validation must be between the ```topValue``` and ```bottomValue```. This check is only numeric and therefore all values must be numeric.
 
+### regex:_regex_
+The field under validation must match the given regular expression. Please note the regex must be in JavaScript format.
 
-### max
-
-
-### min
-
-
-### not_equal
-
-
-### not_in
-
-
-### range
-
-
-### regex
-
-
-### under
-
+### under:_value_
+The field under validation must have a value that is numericaly lower than the number given.
 
 
 ## Versioning
