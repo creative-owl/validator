@@ -5,10 +5,10 @@ class FormatEnforcer {
    * Evaluates a date value and determines if it matches the given
    * format string.
    *
-   * @param {string} value
-   * @param {string} format
+   * @param {String} value
+   * @param {String} format
    *
-   * @returns {boolean}
+   * @returns {Boolean}
    */
   validate(value, format) {
     let delimiter = this.determineDelimiter(format);
@@ -29,7 +29,7 @@ class FormatEnforcer {
    * @param {Array<string>} values
    * @param {Array<string>} formats
    *
-   * @returns {boolean}
+   * @returns {Boolean}
    */
   isFormatAdheredTo(values, formats) {
     let validations = [];
@@ -54,7 +54,7 @@ class FormatEnforcer {
   /**
    * Determines if the day given is valid.
    *
-   * @returns {boolean}
+   * @returns {Boolean}
    */
   isDayValid() {
     if (this.values.text.day.length !== this.formats.day.length) {
@@ -76,7 +76,7 @@ class FormatEnforcer {
   /**
    * Determines if the month given is valid.
    *
-   * @returns {boolean}
+   * @returns {Boolean}
    */
   isMonthValid() {
     if (this.values.text.month.length !== this.formats.month.length) {
@@ -93,7 +93,7 @@ class FormatEnforcer {
   /**
    * Determines if the year given is valid.
    *
-   * @returns {boolean}
+   * @returns {Boolean}
    */
   isYearValid() {
     if (this.values.text.year.length !== this.formats.year.length) {
@@ -109,7 +109,7 @@ class FormatEnforcer {
    * @param {Array<string>} values
    * @param {Array<string>} formats
    *
-   * @returns {void}
+   * @returns {Void}
    */
   setupData(values, formats) {
     this.formats = {
@@ -146,10 +146,10 @@ class FormatEnforcer {
   /**
    * Determine the amount of allowable days in a month.
    *
-   * @param {number} month
-   * @param {number} year
+   * @param {Number} month
+   * @param {Number} year
    *
-   * @returns {number}
+   * @returns {Number}
    */
   determineDays(month, year) {
     if (month === 2 && Number.isInteger(year / 4)) {
@@ -162,9 +162,9 @@ class FormatEnforcer {
   /**
    * Finds the day.
    *
-   * @param {string} value
+   * @param {String} value
    *
-   * @returns {boolean}
+   * @returns {Boolean}
    */
   findDay(value) {
     return value.includes('D');
@@ -173,9 +173,9 @@ class FormatEnforcer {
   /**
    * Finds the month.
    *
-   * @param {string} value
+   * @param {String} value
    *
-   * @returns {boolean}
+   * @returns {Boolean}
    */
   findMonth(value) {
     return value.includes('M');
@@ -184,9 +184,9 @@ class FormatEnforcer {
   /**
    * Finds the year.
    *
-   * @param {string} value
+   * @param {String} value
    *
-   * @returns {boolean}
+   * @returns {Boolean}
    */
   findYear(value) {
     return value.includes('Y');
@@ -195,9 +195,9 @@ class FormatEnforcer {
   /**
    * Determines the delimiter used.
    *
-   * @param {string} value
+   * @param {String} value
    *
-   * @returns {string | boolean}
+   * @returns {String | Boolean}
    */
   determineDelimiter(value) {
     if (value.split('/').length > 1) {
