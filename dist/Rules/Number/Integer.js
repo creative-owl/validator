@@ -7,7 +7,7 @@ class Integer extends RuleInterface {
    * Validates that the data given is of type: integer.
    *
    * @param {Object<string, string>} data
-   * @param {string} field
+   * @param {String} field
    *
    * @returns {Object<string, string>}
    */
