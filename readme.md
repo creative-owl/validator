@@ -39,7 +39,6 @@ The data object should contain the data in key value form that you would like to
 # Rules
 
 ## Simple
-
 The simple validation rules are a collection of rules used for type checking and very simple validation scenarios.
 
 ### alpha
@@ -76,7 +75,6 @@ The field under validation must be a string.
 The field under validation must be a valid South African identity number. The field is validated agains the Luhn algorithm.
 
 ## Existence
-
 The existence validation rules are a collection of rules used for different existence scenarios and are normally used in conjunction with other rules.
 
 ### filled
@@ -93,28 +91,57 @@ The field under validation must be present in the input data and not empty. A fi
 - The value is an empty array or empty Countable object.
 - The value is an uploaded file with no path.
 
-### required_if: _anotherfield,value,..._
-The field under validation must be present and not empty if the anotherfield field is equal to any value.
+### required_if:_anotherfield,value_
+The field under validation must be present and not empty if the anotherfield field is equal to the value.
 
-### required_with: _foo,bar,..._
-The field under validation must be present and not empty only if any of the other specified fields are present.
+### required_with:_foo_
+The field under validation must be present and not empty only if the other specified field is present.
 
 ## Complex
+The complex validation rules are a collection of rules used for complex scenarios where validation requires more robust tooling.
 
 ### above
+
+
 ### confirmed
+
+
 ### date_after
+
+
 ### date_before
+
+
 ### date_format
+
+
 ### equals
+
+
 ### in
+
+
 ### max
+
+
 ### min
+
+
 ### not_equal
+
+
 ### not_in
+
+
 ### range
+
+
 ### regex
+
+
 ### under
+
+
 
 ## Versioning
 
