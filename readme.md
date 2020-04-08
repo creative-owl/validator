@@ -75,6 +75,37 @@ The field under validation must be a string.
 ### za_id_number
 The field under validation must be a valid South African identity number. The field is validated agains the Luhn algorithm.
 
+## Existence
+
+The existence validation rules are a collection of rules used for different existence scenarios and are normally used in conjunction with other rules.
+
+### filled
+
+### optional
+
+### required
+
+### required_if
+
+### required_with
+
+## Complex
+
+### above
+### confirmed
+### date_after
+### date_before
+### date_format
+### equals
+### in
+### max
+### min
+### not_equal
+### not_in
+### range
+### regex
+### under
+
 ## Versioning
 
 For versioning we use [SemVer](http://semver.org/).
